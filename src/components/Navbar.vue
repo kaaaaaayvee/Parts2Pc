@@ -1,12 +1,12 @@
 <template>
   <div class="nav-container">
     <router-link to="/">
-      <div class="logo">Shazz</div>
+      <div class="logo">PC Builder</div>
     </router-link>
     <a-input-search
       placeholder="input search text"
       enter-button
-      style="width: 250px"
+      style="width: 1250px"
       @search="onSearch"
       v-model="searchTerm"
     />

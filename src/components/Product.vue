@@ -130,8 +130,9 @@ export default {
 
     if (this.searchTerm) {
       const { data } = await axios(
-        `https://dummyjson.com/products/search?q=${this.searchTerm}`
+        `https://run.mocky.io/v3/937f4e85-2b29-4efb-a699-f16770469e89`
       );
+      
       this.setItems(data.products);
     }
   },
@@ -162,8 +163,9 @@ export default {
     ]),
     // setItemInStore(data) {},
     async getAllProducts() {
-      const { data } = await axios(`https://dummyjson.com/products`);
+      const { data } = await axios(`https://run.mocky.io/v3/937f4e85-2b29-4efb-a699-f16770469e89`);
       // this.items = data;
+      console.log(data, JSON.parse(data))
       this.setItems(data.products);
     },
     async getProductByCategory(cat) {
@@ -171,7 +173,7 @@ export default {
         await this.getAllProducts();
         return;
       }
-      let d = await fetch(`https://dummyjson.com/products/category/${cat}`);
+      let d = await fetch(`https://run.mocky.io/v3/937f4e85-2b29-4efb-a699-f16770469e89`);
       let da = await d.json();
       // this.items = da;
       this.setItems(da.products);

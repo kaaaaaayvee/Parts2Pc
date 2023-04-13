@@ -11,7 +11,7 @@
       <div slot="nextArrow" class="custom-slick-arrow" style="right: 10px">
         <a-icon type="right-circle" />
       </div>
-      <div class="carousel-wrapper">
+      <!-- <div class="carousel-wrapper">
         <img
           src="https://themepure.net/template/vue/vue/img/bg/bg.jpg"
           width="100%"
@@ -33,13 +33,13 @@
             </a-col>
           </a-row>
         </div>
-      </div>
+      </div> -->
       <div class="carousel-wrapper">
-        <img src="../assets/images/banner/c1.jpeg" width="100%" alt="" />
+        <img src="../assets/images/banner/Artboard_1.png" width="100%" alt="" />
       </div>
 
       <div class="carousel-wrapper">
-        <img src="../assets/images/banner/c2.jpeg" width="100%" alt="" />
+        <img src="../assets/images/banner/Artboard_2.png" width="100%" alt="" />
       </div>
     </a-carousel>
   </div>
